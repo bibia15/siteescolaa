@@ -1,69 +1,253 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>Escola Modelo - Início</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Julio Mesquita | Curitiba - PR</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7fff9;
+        }
+
+        /* CABEÇALHO */
+        header {
+            background: linear-gradient(90deg, #0b4da2, #0db26e);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* BANNER */
+        .banner {
+            background: linear-gradient(90deg, #0db26e, #0b4da2);
+            padding: 50px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        /* SESSÕES */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #0b4da2;
+            margin-bottom: 20px;
+        }
+
+        /* PROFISSIONAIS */
+        .profissionais img {
+            width: 220px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .profissionais p {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        /* FORMULÁRIO */
+        form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            border: 2px solid #0b4da2;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0db26e;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0b4da2;
+        }
+
+        /* TABELA */
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        table, th, td {
+            border: 2px solid #0db26e;
+        }
+
+        th {
+            background-color: #0b4da2;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        /* RODAPÉ */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #0b4da2;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Escola Modelo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.html">Área do Aluno</a></li>
-      </ul>
+
+    <!-- CABEÇALHO -->
+    <header>
+        Colégio Julio Mesquita — Curitiba/PR
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#profissionais">Equipe</a>
+            <a href="#consultoria">Contato</a>
+            <a href="#horarios">Horários</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <h1>Bem-vindo ao C.E. Prof-Ef M Profis</h1>
+        <p>Educação pública de qualidade fazendo a diferença em Curitiba.</p>
     </div>
-  </div>
-</nav>
 
-<header class="bg-light py-5">
-  <div class="container text-center">
-    <h1>Bem-vindo à Escola Modelo</h1>
-    <p class="lead">Formando cidadãos críticos e preparados para o futuro.</p>
-    <a href="sobre.html" class="btn btn-primary">Conheça nossa escola</a>
-  </div>
-</header>
+    <!-- SOBRE -->
+    <section id="sobre">
+        <h2>Quem nós somos?</h2>
+        <p>
+            O Colégio Estadual Julio Mesquita, localizado em Curitiba - Paraná, é uma escola pública que oferece 
+            ensino fundamental e médio. Nosso compromisso é formar cidadãos conscientes, críticos e preparados 
+            para o futuro.
+        </p>
+    </section>
 
-<main class="container my-5">
-  <div class="row">
-    <div class="col-md-8">
-      <h2>Notícias</h2>
-      <article class="mb-3">
-        <h5>Semana Cultural</h5>
-        <p>De 10 a 14/11 teremos uma semana repleta de atividades culturais e oficinas.</p>
-      </article>
-      <article>
-        <h5>Calendário 2026</h5>
-        <p>O calendário com as datas oficiais será publicado em dezembro.</p>
-      </article>
-    </div>
-    <aside class="col-md-4">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Contato rápido</h5>
-          <p class="card-text">Telefone: (00) 0000-0000<br>Email: contato@escolamodelo.edu.br</p>
-        </div>
-      </div>
-      <a class="btn btn-outline-primary w-100" href="login.html">Entrar como aluno</a>
-    </aside>
-  </div>
-</main>
+    <!-- PROFISSIONAIS -->
+    <section id="profissionais" class="profissionais">
+        <h2>Nossa Equipe</h2>
 
-<footer class="bg-dark text-white py-3">
-  <div class="container text-center">
-    ©️ Escola Modelo — Todos os direitos reservados
-  </div>
-</footer>
+        <img src="https://via.placeholder.com/220" alt="">
+        <p>@Diretora</p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <img src="https://via.placeholder.com/220" alt="">
+        <p>@Coordenadora</p>
+
+        <img src="https://via.placeholder.com/220" alt="">
+        <p>@Professor.Exemplo</p>
+    </section>
+
+    <!-- CONSULTORIA / FORMULÁRIO -->
+    <section id="consultoria">
+        <h2>Entre em contato</h2>
+
+        <form>
+            <label>Nome e sobrenome</label>
+            <input type="text" placeholder="Seu nome completo">
+
+            <label>Email</label>
+            <input type="email" placeholder="seuemail@dominio.com">
+
+            <label>Telefone</label>
+            <input type="text" placeholder="(xx) xxxxx-xxxx">
+
+            <label>Mensagem</label>
+            <textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+
+            <label>Como prefere nosso contato?</label><br>
+            <input type="radio"> Email  
+            <input type="radio"> Telefone  
+            <input type="radio"> WhatsApp  
+            <br><br>
+
+            <label>Horário preferido:</label>
+            <input type="text" placeholder="Manhã / Tarde / Noite">
+
+            <label>
+                <input type="checkbox">
+                Desejo receber novidades por email
+            </label>
+
+            <button>Enviar formulário</button>
+        </form>
+    </section>
+
+    <!-- HORÁRIOS -->
+    <section id="horarios">
+        <h2>Horários de Atendimento</h2>
+        <table>
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+
+            <tr>
+                <td>Segunda</td>
+                <td>8h – 19h</td>
+            </tr>
+
+            <tr>
+                <td>Quinta</td>
+                <td>8h – 19h</td>
+            </tr>
+
+            <tr>
+                <td>Sábado</td>
+                <td>8h – 17h</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        © 2024 — Desenvolvido por Bianca Lira 🌿 Azul & Verde
+    </footer>
+
 </body>
 </html>
