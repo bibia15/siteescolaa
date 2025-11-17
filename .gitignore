@@ -1,0 +1,11 @@
+/build/
+/bin/
+/target/
+/*.class
+/.settings/
+/.project
+/.idea/
+/*.iml
+/WebContent/WEB-INF/classes/
+/*.war
+.DS_Store
