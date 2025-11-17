@@ -1,0 +1,12 @@
+CREATE DATABASE site_escola;
+USE site_escola;
+
+CREATE TABLE alunos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(150) NOT NULL,
+  usuario VARCHAR(80) NOT NULL UNIQUE,
+  senha_hash CHAR(64) NOT NULL,
+  turma VARCHAR(50),
+  matricula VARCHAR(50),
+  turno VARCHAR(50)
+);
