@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Painel do Aluno</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="painel-container">
+<h1 id="nome"></h1>
+
+<div class="info">
+<p><b>Usuário:</b> <span id="usuario"></span></p>
+<p><b>Matrícula:</b> <span id="matricula"></span></p>
+<p><b>Turma:</b> <span id="turma"></span></p>
+<p><b>Turno:</b> <span id="turno"></span></p>
+</div>
+
+<button onclick="logout()" class="logout">Sair</button>
+</div>
+
+<script>
+const aluno = JSON.parse(localStorage.getItem("alunoLogado"));
+
+if(!aluno){
+    window.location.href = "login.html";
+}
+
+document.getElementById("nome").innerText = "Bem-vindo, " + aluno.nome;
+document.getElementById("usuario").innerText = aluno.usuario;
+document.getElementById("matricula").innerText = aluno.matricula;
+document.getElementById("turma").innerText = aluno.turma;
+document.getElementById("turno").innerText = aluno.turno;
+
+function logout(){
+    localStorage.removeItem("alunoLogado");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
