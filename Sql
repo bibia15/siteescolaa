@@ -10,3 +10,7 @@ CREATE TABLE alunos (
   matricula VARCHAR(50),
   turno VARCHAR(50)
 );
+INSERT INTO alunos (nome, usuario, senha_hash, turma, matricula, turno) VALUES
+('João da Silva','joao','5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5','3º Ano B','20256678','Manhã'),
+('Maria Souza','maria','55a5e9e78207b4df8699d60886fa070079463547b095d1a05bc719bb4e6cd251','2º Ano A','20251234','Tarde'),
+('Ana Costa','ana','92fbbd4e4722ea22231609654d6db738f219e0a5bd170b03ce4f72867cca3f48','1º Ano C','20259876','Noite');
