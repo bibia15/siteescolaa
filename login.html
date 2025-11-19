@@ -62,16 +62,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
                 
               </div>
               <button class="btn btn-primary w-100" type="submit">Entrar</button>
-              document.getElementById("loginForm").addEventListener("submit", async function(e){
-            const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
-    console.log("Usuário:", usuario);
-    console.log("Senha:", senha);
-
-    const req = await fetch("alunos.json");
-    const alunos = await req.json();
-
-    console.log("Alunos carregados:", alunos);
+          
             </form>
             <p class="mt-3 small text-muted">Usuário fixo para testes: <b>aluno</b> / Senha: <b>senha123</b></p>
             
