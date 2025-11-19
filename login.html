@@ -25,6 +25,16 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
     localStorage.setItem("alunoLogado", JSON.stringify(aluno));
     window.location.href = "aluno.html";
+    document.getElementById("loginForm").addEventListener("submit", async function(e){
+            const usuario = document.getElementById("usuario").value;
+    const senha = document.getElementById("senha").value;
+    console.log("Usuário:", usuario);
+    console.log("Senha:", senha);
+
+    const req = await fetch("alunos.json");
+    const alunos = await req.json();
+
+    console.log("Alunos carregados:", alunos);
 });
 </script>
 
