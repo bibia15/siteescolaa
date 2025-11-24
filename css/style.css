@@ -87,3 +87,25 @@ button:hover {
   color: red;
   margin-top: 10px;
 }
+/* ======== NOTÍCIAS COM FOTOS (ESTILO MARISTA) ======== */
+
+.noticia-card {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.noticia-img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.noticia-card .p-3 {
+  flex: 1;
+}
+
+.titulo-noticias {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
