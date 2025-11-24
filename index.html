@@ -2,78 +2,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Escola Modelo - Início</title>
+  <title>Colégio Julio Mesquita - Início</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- Bootstrap CDN -->
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Seu CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
- 
-<header>
-<h1>Colégio Estadual Julio Mesquita</h1>
-<nav>
-<a href="index.html">Início</a>
-<a href="login.html">Área do Aluno</a>
-</nav>
+
+<!-- HEADER AZUL COM LOGO E NOME -->
+<header class="header-principal d-flex align-items-center justify-content-between px-4">
+  
+  <div class="titulo-escola">
+    <h1>Colégio Estadual Julio Mesquita</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="login.html">Área do Aluno</a>
+    </nav>
+  </div>
+
+  <img src="img/logo.png" alt="Logo da escola" class="logo-escola">
+  
 </header>
 
-<main>
-<h2>Bem-vindo ao portal da escola</h2>
-<p>Use o menu para acessar a área do aluno.</p>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Escola Modelo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.html">Área do Aluno</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<!-- SEÇÃO DE BOAS-VINDAS -->
+<section class="bg-light py-5 text-center">
+  <h2>Bem-vindo ao portal da escola</h2>
+  <p>Use o menu para acessar a área do aluno.</p>
+  <a href="sobre.html" class="btn btn-primary mt-3">Conheça nossa escola</a>
+</section>
 
-<header class="bg-light py-5">
-  <div class="container text-center">
-   
-    <a href="sobre.html" class="btn btn-primary">Conheça nossa escola</a>
-  </div>
-</header>
 
+<!-- CONTEÚDO PRINCIPAL -->
 <main class="container my-5">
   <div class="row">
+    
     <div class="col-md-8">
       <h2>Notícias</h2>
+
       <article class="mb-3">
         <h5>Semana Cultural</h5>
         <p>De 10 a 14/11 teremos uma semana repleta de atividades culturais e oficinas.</p>
       </article>
+
       <article>
         <h5>Calendário 2026</h5>
         <p>O calendário com as datas oficiais será publicado em dezembro.</p>
       </article>
     </div>
+
     <aside class="col-md-4">
       <div class="card mb-3">
         <div class="card-body">
           <h5 class="card-title">Contato rápido</h5>
-          <p class="card-text">Telefone: (00) 0000-0000<br>Email: contato@escolamodelo.edu.br</p>
+          <p>Telefone: (00) 0000-0000</p>
+          <p>Email: contato@escolamodelo.edu.br</p>
         </div>
       </div>
+
       <a class="btn btn-outline-primary w-100" href="login.html">Entrar como aluno</a>
     </aside>
+
   </div>
 </main>
 
-<footer class="bg-dark text-white py-3">
-  <div class="container text-center">
-    
-  </div>
+
+<!-- RODAPÉ -->
+<footer class="bg-dark text-white py-3 text-center">
+  <p>Colégio Estadual Julio Mesquita — Curitiba, PR</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
