@@ -1,66 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Estadual Júlio Mesquita</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="utf-8">
+  <title>Colégio Estadual Julio Mesquita</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-    <!-- ======== CABEÇALHO / LOGO ======== -->
-    <header class="header">
-        <div class="header-left">
-            <h1>Colégio Estadual Júlio Mesquita</h1>
-            <p>Educação, compromisso e transformação.</p>
+<!-- ================= CABEÇALHO SUPERIOR ================= -->
+<header class="py-3" style="background:#1f8fff; color:white;">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <h1 class="m-0" style="font-size:1.6rem;">Colégio Estadual Julio Mesquita</h1>
+      <p class="m-0" style="font-size:0.9rem;">Educação, compromisso e transformação.</p>
+    </div>
+
+    <!-- LOGO -->
+    <img src="img/logo.png" alt="Logo" class="logo-escola">
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Início</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Área do Aluno</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= BANNER ================= -->
+<header class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-3">Bem-vindo ao portal do Colégio Julio Mesquita</h2>
+
+    <p class="mb-4">Informações, comunicados e acesso rápido para alunos.</p>
+
+    <a href="sobre.html" class="btn btn-primary">Conheça nossa escola</a>
+  </div>
+</header>
+
+<!-- ================= CONTEÚDO PRINCIPAL ================= -->
+<main class="container my-5">
+  <div class="row">
+
+    <!-- COLUNA DAS NOTÍCIAS COM FOTOS (IGUAL MARISTA) -->
+    <div class="col-md-8">
+      <h2 class="mb-4">Notícias & Atividades</h2>
+
+      <!-- CARD 1 -->
+      <div class="noticia-card d-flex mb-4 bg-white shadow-sm rounded">
+        <img src="img/foto1.jpg" class="noticia-img rounded-start" alt="">
+        <div class="p-3">
+          <h4 class="fw-bold">Semana Cultural</h4>
+          <p>Oficinas, apresentações e diversas atividades culturais realizadas pelo colégio.</p>
+          <p><b>Turno:</b> Manhã</p>
         </div>
+      </div>
 
-        <div class="header-right">
-            <img src="img/logo.png" alt="Logo do Colégio" class="logo-escola">
+      <!-- CARD 2 -->
+      <div class="noticia-card d-flex mb-4 bg-white shadow-sm rounded">
+        <img src="img/foto2.jpg" class="noticia-img rounded-start" alt="">
+        <div class="p-3">
+          <h4 class="fw-bold">Projeto de Tecnologia</h4>
+          <p>Alunos desenvolveram projetos de robótica e informática aplicada.</p>
+          <p><b>Turno:</b> Tarde</p>
         </div>
-    </header>
+      </div>
+    </div>
 
-    <!-- ======== MENU ======== -->
-    <nav class="menu">
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="aluno.html">Área do Aluno</a>
-    </nav>
+    <!-- COLUNA LATERAL -->
+    <aside class="col-md-4">
 
-    <!-- ========= NOTÍCIAS ========= -->
-    <section class="noticias container">
-
-        <h2 class="titulo-noticias">Colégio Estadual Júlio Mesquita – Notícias & Atividades</h2>
-
-        <!-- CARD 1 -->
-        <div class="noticia-card">
-            <img src="img/foto1.jpg" class="noticia-img" alt="Imagem de atividade escolar">
-            <div class="noticia-texto">
-                <h3 class="noticia-titulo">Semana Cultural</h3>
-                <p>
-                    Os estudantes participaram de oficinas, apresentações e atividades que exploram
-                    conhecimento, criatividade e integração escolar.
-                </p>
-                <p><b>Turno:</b> Manhã</p>
-            </div>
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Contato rápido</h5>
+          <p class="card-text">
+            Telefone: (41) XXXX-XXXX <br>
+            Email: contato@julio-mesquita.edu.br
+          </p>
         </div>
+      </div>
 
-        <!-- CARD 2 -->
-        <div class="noticia-card">
-            <img src="img/foto2.jpg" class="noticia-img" alt="Projeto de tecnologia">
-            <div class="noticia-texto">
-                <h3 class="noticia-titulo">Projeto de Tecnologia</h3>
-                <p>
-                    Turmas do Ensino Fundamental desenvolveram projetos envolvendo robótica e
-                    pensamento computacional.
-                </p>
-                <p><b>Turno:</b> Tarde</p>
-            </div>
-        </div>
+      <a class="btn btn-outline-primary w-100" href="login.html">Entrar como aluno</a>
 
-    </section>
+    </aside>
+
+  </div>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="bg-dark text-white py-3">
+  <div class="container text-center">
+    © 2025 - Colégio Estadual Julio Mesquita — Todos os direitos reservados.
+  </div>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
