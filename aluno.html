@@ -8,16 +8,16 @@
 <body>
 
 <div class="painel-container">
-<h1 id="nome"></h1>
+    <h1 id="nome"></h1>
 
-<div class="info">
-<p><b>Usuário:</b> <span id="usuario"></span></p>
-<p><b>Matrícula:</b> <span id="matricula"></span></p>
-<p><b>Turma:</b> <span id="turma"></span></p>
-<p><b>Turno:</b> <span id="turno"></span></p>
-</div>
+    <div class="info">
+        <p><b>Usuário:</b> <span id="usuario"></span></p>
+        <p><b>Matrícula:</b> <span id="matricula"></span></p>
+        <p><b>Turma:</b> <span id="turma"></span></p>
+        <p><b>Turno:</b> <span id="turno"></span></p>
+    </div>
 
-<button onclick="logout()" class="logout">Sair</button>
+    <button onclick="logout()" class="logout">Sair</button>
 </div>
 
 <script>
@@ -36,33 +36,7 @@ document.getElementById("turno").innerText = aluno.turno;
 function logout(){
     localStorage.removeItem("alunoLogado");
     window.location.href = "login.html";
-    
-}[
-    {
-        "usuario": "joao",
-        "senha": "12345",
-        "nome": "João da Silva",
-        "turma": "3º Ano B",
-        "matricula": "20256678",
-        "turno": "Manhã"
-    },
-    {
-        "usuario": "maria",
-        "senha": "senha123",
-        "nome": "Maria Souza",
-        "turma": "2º Ano A",
-        "matricula": "20251234",
-        "turno": "Tarde"
-    },
-    {
-        "usuario": "ana",
-        "senha": "aluno2025",
-        "nome": "Ana Costa",
-        "turma": "1º Ano C",
-        "matricula": "20259876",
-        "turno": "Noite"
-    }
-]
+}
 </script>
 
 </body>
