@@ -9,7 +9,7 @@ body {
 .header-principal {
   background: #1f8fff;
   color: white;
-  height: 160px; /* Aumentei a área azul */
+  height: 190px; /* Aumentei a área azul */
 }
 
 /* Título e links alinhados à esquerda */
@@ -23,7 +23,7 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 /* LOGO NA DIREITA */
