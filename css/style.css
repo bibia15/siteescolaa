@@ -7,7 +7,7 @@ body {
 
 /* HEADER MAIOR E MAIS BONITO */
 .header-principal {
-  background: white;
+  background: rgb(235, 233, 233);
   color: rgb(34, 34, 124);
   height: 190px; /* Aumentei a área azul */
 }
