@@ -109,3 +109,20 @@ button:hover {
   font-weight: bold;
   margin-bottom: 20px;
 }
+/* HEADER COM IMAGEM DE FUNDO */
+.header-foto {
+  background-image: url("sua-imagem.jpg"); /* troque pela foto */
+  background-size: cover;       /* cobre toda a área */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat; /* não repete a imagem */
+  padding: 80px 0;              /* altura do header */
+  color: white;                 /* deixa o texto branco */
+}
+
+/* Fundo escurecido opcional para destacar o texto */
+.conteudo-header {
+  background: rgba(0, 0, 0, 0.4); /* leve sombra */
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
