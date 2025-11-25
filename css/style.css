@@ -7,8 +7,8 @@ body {
 
 /* HEADER MAIOR E MAIS BONITO */
 .header-principal {
-  background: #1f8fff;
-  color: white;
+  background: white;
+  color: rgb(34, 34, 124);
   height: 190px; /* Aumentei a área azul */
 }
 
