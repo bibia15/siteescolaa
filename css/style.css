@@ -109,20 +109,32 @@ button:hover {
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* HEADER COM IMAGEM DE FUNDO */
+/* Header com imagem de fundo */
 .header-foto {
-  background-image: url("fundo.jpeg"); /* troque pela foto */
+  background-image: url("img/foto-colegio.jpg"); /* ajuste o caminho */
   background-size: cover;       /* cobre toda a área */
-  background-position: center;  /* centraliza a imagem */
-  background-repeat: no-repeat; /* não repete a imagem */
-  padding: 80px 0;              /* altura do header */
-  color: white;                 /* deixa o texto branco */
+  background-position: center;  /* centraliza na imagem */
+  background-repeat: no-repeat;
+  min-height: 50vh;             /* dá uma altura mínima para o header */
+  display: flex;
+  align-items: center;          /* centra verticalmente o conteúdo */
+  justify-content: center;
+  color: white;
+  position: relative;
+  /* caso o Bootstrap esteja aplicando bg-light, force transparente: */
+  background-color: transparent !important;
 }
 
-/* Fundo escurecido opcional para destacar o texto */
+/* Caixa com leve dark overlay para destacar texto */
 .conteudo-header {
-  background: rgba(0, 0, 0, 0.4); /* leve sombra */
+  background: rgba(0,0,0,0.45);
   display: inline-block;
-  padding: 20px 40px;
-  border-radius: 10px;
+  padding: 24px 36px;
+  border-radius: 8px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .header-foto { min-height: 40vh; padding: 30px 0; }
+  .conteudo-header { padding: 18px 24px; }
 }
