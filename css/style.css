@@ -128,6 +128,7 @@ button:hover {
 /* Caixa com leve dark overlay para destacar texto */
 .conteudo-header {
   background: rgba(0,0,0,0.45);
+  background-size: cover;
   display: inline-block;
   padding: 24px 36px;
   border-radius: 8px;
