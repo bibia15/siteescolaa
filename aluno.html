@@ -8,13 +8,34 @@
 <body>
 
 <div class="painel-container">
-    <h1 id="nome"></h1>
-    <!-- FOTO DO ALUNO -->
-<div class="foto-aluno-box">
-    <img id="fotoAluno" src="img/aluno.jpg" alt="Foto do aluno">
+    <div class="painel-topo">
+    <div class="foto-box">
+        <img src="img/aluno.jpg" alt="Foto do aluno">
+    </div>
+
+    <div class="bemvindo-box">
+        <h1 id="nome"></h1>
+        <p id="usuarioTexto"></p>
+    </div>
 </div>
 
-<!-- NOTAS FICTÍCIAS -->
+<div class="info-cards">
+    <div class="info-card">
+        <h3>Matrícula</h3>
+        <p id="matricula"></p>
+    </div>
+
+    <div class="info-card">
+        <h3>Turma</h3>
+        <p id="turma"></p>
+    </div>
+
+    <div class="info-card">
+        <h3>Turno</h3>
+        <p id="turno"></p>
+    </div>
+</div>
+
 <h2 class="titulo-notas">Notas do Aluno</h2>
 
 <div class="notas-container">
@@ -38,6 +59,8 @@
         <p>Nota: <b>9.5</b></p>
     </div>
 </div>
+
+<button onclick="logout()" class="logout">Sair</button>
 
     <div class="info">
         <p><b>Usuário:</b> <span id="usuario"></span></p>
