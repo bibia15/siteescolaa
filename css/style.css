@@ -140,155 +140,83 @@ button:hover {
   .conteudo-header { padding: 18px 24px; }
   
 }
-/* FOTO DO ALUNO */
-.foto-aluno-box {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #1f8fff;
-  box-shadow: 0 0 10px #0003;
+/* ===== HEADER AZUL MODERNO ===== */
+.header-aluno {
+    background: #1f8fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.foto-aluno-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.foto-nome-area {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: white;
 }
 
-/* Título das notas */
-.titulo-notas {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  font-size: 22px;
-  color: #1f8fff;
+.foto-nome-area img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff80;
 }
 
-/* Container das notas */
-.notas-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+.foto-nome-area h1 {
+    font-size: 28px;
+    margin: 0;
 }
 
-/* Cartões de nota */
-.nota-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 0 12px #0001;
-  border-left: 5px solid #1f8fff;
-  text-align: left;
-}
-
-.nota-card h3 {
-  margin: 0 0 5px;
-  font-size: 18px;
-  color: #1f8fff;
-}
-/* ===== FAIXA AZUL DO TOPO ===== */
-.painel-topo {
-  background: #1f8fff;
-  padding: 25px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: white;
-  margin-bottom: 20px;
-}
-
-/* FOTO DO ALUNO */
-.foto-box {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid white;
-  flex-shrink: 0;
-}
-
-.foto-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* CAIXA DE BEM-VINDO */
-.bemvindo-box h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.bemvindo-box p {
-  margin-top: 5px;
-  font-size: 17px;
-  opacity: 0.9;
-}
-
-/* ===== CARDS DE INFORMAÇÃO ===== */
-.info-cards {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
-  justify-content: center;
-}
-
-.info-card {
-  background: white;
-  padding: 15px;
-  flex: 1;
-  border-radius: 10px;
-  box-shadow: 0 0 12px #0002;
-  border-left: 5px solid #1f8fff;
-  text-align: center;
-}
-
-.info-card h3 {
-  margin: 0 0 5px;
-  color: #1f8fff;
-}
-
-/* ===== NOTAS ===== */
-.titulo-notas {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #1f8fff;
-  margin-top: 15px;
-}
-
-.notas-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.nota-card {
-  background: white;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 0 12px #0001;
-  border-left: 5px solid #1f8fff;
-}
-
-.nota-card h3 {
-  margin: 0 0 5px;
-  color: #1f8fff;
-}
-
-@media (max-width: 600px) {
-  .info-cards {
+/* ===== CARDS DO PAINEL ===== */
+.painel-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
     flex-direction: column;
-  }
+    gap: 25px;
+}
 
-  .notas-container {
-    grid-template-columns: 1fr;
-  }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #0001;
+}
 
-  .painel-topo {
-    flex-direction: column;
-    text-align: center;
-  }
+.card h2 {
+    margin-top: 0;
+    color: #1f8fff;
+}
+
+/* Notas */
+.nota-item {
+    background: #e8f4ff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.nota-item h3 {
+    margin: 0;
+    color: #005fcc;
+}
+
+/* Botão sair */
+.sair-area {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.logout {
+    background: #3134ff;
+    padding: 12px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
 }

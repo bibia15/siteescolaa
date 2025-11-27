@@ -7,68 +7,50 @@
 </head>
 <body>
 
-<div class="painel-container">
-    <div class="painel-topo">
-    <div class="foto-box">
-        <img src="img/aluno.jpg" alt="Foto do aluno">
-    </div>
-
-    <div class="bemvindo-box">
+<!-- TOPO AZUL MODERNO -->
+<header class="header-aluno">
+    <div class="foto-nome-area">
+        <img id="fotoAluno" src="img/aluno.jpg" alt="Foto do aluno">
         <h1 id="nome"></h1>
-        <p id="usuarioTexto"></p>
     </div>
-</div>
+</header>
 
-<div class="info-cards">
-    <div class="info-card">
-        <h3>Matrícula</h3>
-        <p id="matricula"></p>
-    </div>
+<!-- CONTEÚDO DO PAINEL -->
+<div class="painel-wrapper">
 
-    <div class="info-card">
-        <h3>Turma</h3>
-        <p id="turma"></p>
-    </div>
+    <!-- CARD DE INFORMAÇÕES DO ALUNO -->
+    <div class="card info-card">
+        <h2>Informações do Aluno</h2>
 
-    <div class="info-card">
-        <h3>Turno</h3>
-        <p id="turno"></p>
-    </div>
-</div>
-
-<h2 class="titulo-notas">Notas do Aluno</h2>
-
-<div class="notas-container">
-    <div class="nota-card">
-        <h3>Matemática</h3>
-        <p>Nota: <b>8.7</b></p>
-    </div>
-
-    <div class="nota-card">
-        <h3>Português</h3>
-        <p>Nota: <b>9.2</b></p>
-    </div>
-
-    <div class="nota-card">
-        <h3>História</h3>
-        <p>Nota: <b>8.0</b></p>
-    </div>
-
-    <div class="nota-card">
-        <h3>Ciências</h3>
-        <p>Nota: <b>9.5</b></p>
-    </div>
-</div>
-
-<button onclick="logout()" class="logout">Sair</button>
-
-    <div class="info">
         <p><b>Usuário:</b> <span id="usuario"></span></p>
         <p><b>Matrícula:</b> <span id="matricula"></span></p>
         <p><b>Turma:</b> <span id="turma"></span></p>
         <p><b>Turno:</b> <span id="turno"></span></p>
     </div>
 
+    <!-- CARD DE NOTAS -->
+    <div class="card notas-card">
+        <h2>Notas do Aluno</h2>
+
+        <div class="nota-item">
+            <h3>Matemática</h3>
+            <p>Nota: <span id="notaMatematica"></span></p>
+        </div>
+
+        <div class="nota-item">
+            <h3>Português</h3>
+            <p>Nota: <span id="notaPortugues"></span></p>
+        </div>
+
+        <div class="nota-item">
+            <h3>História</h3>
+            <p>Nota: <span id="notaHistoria"></span></p>
+        </div>
+    </div>
+</div>
+
+<!-- BOTÃO SAIR -->
+<div class="sair-area">
     <button onclick="logout()" class="logout">Sair</button>
 </div>
 
@@ -80,11 +62,15 @@ if(!aluno){
 }
 
 document.getElementById("nome").innerText = "Bem-vindo, " + aluno.nome;
-document.getElementById("usuarioTexto").innerText = "Usuário: " + aluno.usuario; 
 document.getElementById("usuario").innerText = aluno.usuario;
 document.getElementById("matricula").innerText = aluno.matricula;
 document.getElementById("turma").innerText = aluno.turma;
 document.getElementById("turno").innerText = aluno.turno;
+
+// Notas fictícias
+document.getElementById("notaMatematica").innerText = aluno.notas?.matematica || "8.7";
+document.getElementById("notaPortugues").innerText = aluno.notas?.portugues || "9.2";
+document.getElementById("notaHistoria").innerText = aluno.notas?.historia || "7.8";
 
 function logout(){
     localStorage.removeItem("alunoLogado");
